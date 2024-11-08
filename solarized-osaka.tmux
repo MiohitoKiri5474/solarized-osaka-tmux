@@ -2,7 +2,7 @@
 # +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # title      Solarized Osaka                                          +
 # version    1.0.0                                                    +
-# repository https://github.com/MiohitoKiri5474/solarized-osaka-tmux  +
+# repository https://github.com/MiohitoKiri5474/solarized-osaka-tmux-tmux  +
 # author     MiohitoKiri5474                                          +
 # +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -33,9 +33,9 @@ default_window_id_style="digital"
 default_pane_id_style="hsquare"
 default_zoom_id_style="dsquare"
 
-window_id_style="$(echo "$TMUX_VARS" | grep '@solarized-osaka_window_id_style' | cut -d" " -f2)"
-pane_id_style="$(echo "$TMUX_VARS" | grep '@solarized-osaka_pane_id_style' | cut -d" " -f2)"
-zoom_id_style="$(echo "$TMUX_VARS" | grep '@solarized-osaka_zoom_id_style' | cut -d" " -f2)"
+window_id_style="$(echo "$TMUX_VARS" | grep '@solarized-osaka-tmux_window_id_style' | cut -d" " -f2)"
+pane_id_style="$(echo "$TMUX_VARS" | grep '@solarized-osaka-tmux_pane_id_style' | cut -d" " -f2)"
+zoom_id_style="$(echo "$TMUX_VARS" | grep '@solarized-osaka-tmux_zoom_id_style' | cut -d" " -f2)"
 window_id_style="${window_id_style:-$default_window_id_style}"
 pane_id_style="${pane_id_style:-$default_pane_id_style}"
 zoom_id_style="${zoom_id_style:-$default_zoom_id_style}"
