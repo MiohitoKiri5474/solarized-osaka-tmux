@@ -2,7 +2,7 @@
 # +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # title      Solarized Osaka                                          +
 # version    1.0.0                                                    +
-# repository https://github.com/MiohitoKiri5474/solarized-osaka-tmux-tmux  +
+# repository https://github.com/MiohitoKiri5474/solarized-osaka-tmux  +
 # author     MiohitoKiri5474                                          +
 # +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
