@@ -53,7 +53,7 @@ battery_status="#($SCRIPTS_PATH/battery-widget.sh)"
 
 #+--- Bars LEFT ---+
 # Session name
-tmux set -g status-left "#[fg=${THEME[bblack]},bg=${THEME[bmagenta]},bold] #{?client_prefix,󰠠 ,#[dim]󰤂 }#[bold,nodim] MiohitoKiri5475 "
+tmux set -g status-left "#[fg=${THEME[bblack]},bg=${THEME[bmagenta]},bold] #{?client_prefix,󰠠 ,#[dim]󰤂 }#[bold,nodim]#(whoami) "
 
 #+--- Windows ---+
 # Focus
@@ -62,5 +62,5 @@ tmux set -g window-status-current-format "$RESET#[fg=${THEME[green]},bg=${THEME[
 tmux set -g window-status-format "$RESET#[fg=${THEME[foreground]}] #{?#{==:#{pane_current_command},ssh},󰣀 , }${RESET}$window_number#W#[nobold,dim]#{?window_zoomed_flag, $zoom_number, $custom_pane}#[fg=${THEME[yellow]}]#{?window_last_flag,󰁯  , }"
 
 #+--- Bars RIGHT ---+
-tmux set -g status-right "$battery_status$current_path$cmus_status$netspeed$git_status$date_and_time"
+tmux set -g status-right "$battery_status$current_path$cmus_status$netspeed$git_status$date_and_time #[fg=${THEME[white]},bg=${THEME[magenta]}] #H"
 tmux set -g window-status-separator ""
