@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# base on solarized-osaka with silarized
+# base on solarized-osaka with solarized
 
 declare -A THEME=(
   ["background"]="#0d2a34"
