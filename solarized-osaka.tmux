@@ -22,7 +22,7 @@ tmux set -g message-style "bg=${THEME[blue]},fg=${THEME[background]}"
 tmux set -g message-command-style "fg=${THEME[white]},bg=${THEME[black]}"
 
 tmux set -g pane-border-style "fg=${THEME[bblack]}"
-tmux set -g pane-active-border-style "fg=${THEME[blue]},bg=${THEME[magenta]}"
+tmux set -g pane-active-border-style "fg=${THEME[bblack]}"
 tmux set -g pane-border-status off
 
 tmux set -g status-style bg="${THEME[background]}"
