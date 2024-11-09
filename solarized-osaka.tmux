@@ -57,7 +57,7 @@ tmux set -g status-left "#[fg=${THEME[bblack]},bg=${THEME[bmagenta]},bold] #{?cl
 
 #+--- Windows ---+
 # Focus
-tmux set -g window-status-current-format "${RESET}#[bg=${THEME[bgreen]}] #[fg=${THEME[red]},bold,nodim]$window_number #W#[nobold]#{?window_zoomed_flag, $zoom_number, $custom_pane}"
+tmux set -g window-status-current-format "${RESET}#[bg=${THEME[white]}] #[fg=${THEME[magenta]},bold,nodim]$window_number #W#[nobold]#{?window_zoomed_flag, $zoom_number, $custom_pane}"
 # Unfocused
 tmux set -g window-status-format "${RESET}#{?window_last_flag, #[fg=${THEME[yellow]}], }$window_number #W#[nobold,dim]#{?window_zoomed_flag, $zoom_number, $custom_pane}"
 
