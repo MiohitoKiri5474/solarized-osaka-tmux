@@ -25,6 +25,10 @@ tmux set -g pane-border-style "fg=${THEME[bblack]}"
 tmux set -g pane-active-border-style "fg=${THEME[bblack]}"
 tmux set -g pane-border-status off
 
+# Popups use the terminal background like regular panes
+tmux set -g popup-style "bg=default,fg=default"
+tmux set -g popup-border-style "bg=default,fg=${THEME[bgreen]}"
+
 tmux set -g status-style bg="${THEME[black]}"
 
 TMUX_VARS="$(tmux show -g)"
